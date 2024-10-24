@@ -7,12 +7,17 @@ export const TodoListItemContainer = styled.li`
   justify-content: space-between;
   gap: 20px;
   height: 50px;
-  padding: 0 15px;
+  padding: 5px 15px;
   background-color: rgba(53, 56, 62, 0.05);
   user-select: none;
   flex-shrink: 0;
   border: 1px solid #a3a3a3;
   border-radius: 5px;
+
+  @media (max-width: 700px) {
+    padding: 10px;
+    height: max-content;
+  }
 `;
 
 export const CheckBox = styled.div`
@@ -30,6 +35,11 @@ export const CheckBox = styled.div`
     border: 1px solid #a3a3a3;
     border-radius: 2px;
     background-color: #ffffff;
+
+    @media (max-width: 700px) {
+      width: 13px;
+      height: 13px;
+    }
 
     &:checked {
       background-color: #4f4f4f;
@@ -52,10 +62,19 @@ export const CheckBox = styled.div`
     outline: none;
     padding: 8px 10px;
     font-size: 15px;
+
+    @media (max-width: 700px) {
+      font-size: 11px;
+    }
   }
 
   .content {
+    width: 100%;
     font-size: 15px;
+
+    @media (max-width: 700px) {
+      font-size: 11px;
+    }
   }
 
   input[type="checkbox"]:checked + .content {
@@ -87,7 +106,21 @@ export const ButtonSection = styled.div`
     svg {
       width: 20px;
       height: 20px;
+
+      @media (max-width: 700px) {
+        width: 14px;
+        height: 14px;
+      }
     }
+
+    @media (max-width: 700px) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    gap: 7px;
   }
 
   .edit {

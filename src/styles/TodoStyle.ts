@@ -8,7 +8,7 @@ export const TodoContainer = styled.div`
 `;
 
 export const TodoMain = styled.main`
-  width: 60vw;
+  width: 70vw;
   height: auto;
   margin: 0 auto;
   border: 1px solid #ebebeb;
@@ -21,7 +21,11 @@ export const TodoMain = styled.main`
     flex-direction: column;
     gap: 10px;
     color: #292929;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #ebebeb;
+
+    h1 {
+      font-size: 25px;
+    }
   }
 `;

@@ -4,19 +4,18 @@ import TodoListItem from "./TodoListItem";
 import { ITodo, TEditMode } from "../types/Todo";
 import axios from "axios";
 
-const TodoList = () => {
-  const [data, setData] = useState<ITodo[]>([]);
+const TodoList = ({
+  data,
+  setData,
+}: {
+  data: ITodo[];
+  setData: React.Dispatch<React.SetStateAction<ITodo[]>>;
+}) => {
   const [editTodo, setEditTodo] = useState<TEditMode>({
     id: 0,
     status: "edit",
   });
   const [editText, setEditText] = useState("");
-  // const [newTodo, setNewTodo] = useState<ITodo>({
-  //   userId: 1,
-  //   id: new Date().getTime(),
-  //   title: "",
-  //   completed: false,
-  // });
 
   useEffect(() => {
     const setTodoInitData = async () => {
