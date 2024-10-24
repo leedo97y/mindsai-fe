@@ -8,9 +8,9 @@ const Todo = () => {
       <TodoMain>
         <section id="todoTitle">
           <h1>Todo List App</h1>
+          {/* 등록 */}
+          <TodoEditor />
         </section>
-        {/* 등록 */}
-        <TodoEditor />
         {/* 목록 */}
         <TodoList />
       </TodoMain>

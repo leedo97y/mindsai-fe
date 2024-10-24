@@ -8,18 +8,20 @@ export const TodoContainer = styled.div`
 `;
 
 export const TodoMain = styled.main`
-  width: 50vw;
-  height: 50vh;
+  width: 60vw;
+  height: auto;
   margin: 0 auto;
   border: 1px solid #ebebeb;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 20px;
 
   #todoTitle {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     color: #292929;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ebebeb;
   }
-`;
-
-export const TodoBody = styled.section`
-  //
 `;
